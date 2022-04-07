@@ -1,4 +1,3 @@
-
 /**
  * importing scanner class to take input from console
  */
@@ -15,6 +14,7 @@ public class AddressBookMain {
 			System.out.println("Enter \n 1. To add The new AddressBook\n 2. To add contact in AddressBook\n "
 					+ "3. To edit the contact in AddressBook\n 4. To delete the contact in AddressBook\n 5. To delete the AddressBook\n "
 					+ "6. To Print the AddressBook\n 7. To Print the contacts in AddressBook\n 0. to exit");
+			@SuppressWarnings("resource")
 			Scanner scanner = new Scanner(System.in);
 			int choice = scanner.nextInt();
 			switch (choice) {

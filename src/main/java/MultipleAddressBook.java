@@ -1,3 +1,5 @@
+
+
 import java.util.*;
 
 public class MultipleAddressBook {
@@ -13,6 +15,7 @@ public class MultipleAddressBook {
 	 */
 	public void addAddressBook() {
 		System.out.println("Enter Name of new Address Book: ");
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		String bookName = scanner.next();
 		if (addressBookMap.containsKey(bookName)) {
